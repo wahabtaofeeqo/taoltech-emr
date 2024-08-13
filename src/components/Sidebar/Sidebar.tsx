@@ -1,12 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { HiMiniDocumentText } from "react-icons/hi2";
-import {
-  PiChatsCircleThin,
-  PiChatsTeardrop,
-  PiFolderMinusFill,
-} from "react-icons/pi";
-import { IoMdSettings } from "react-icons/io";
+import { PiChatsTeardrop } from "react-icons/pi";
 import { RiHome5Line } from "react-icons/ri";
 import { RxFilePlus } from "react-icons/rx";
 import { TbBuildingHospital, TbMessage2 } from "react-icons/tb";
@@ -14,7 +8,8 @@ import { FaUserInjured } from "react-icons/fa";
 import { BiBookContent } from "react-icons/bi";
 import { HiOutlineViewGridAdd } from "react-icons/hi";
 import { CiSettings } from "react-icons/ci";
-import UsedSpace from "../UsedSpace/UsedSpace";
+import UsedSpace from "./Components/UsedSpace/UsedSpace";
+import User from "./Components/User/User";
 
 interface LinkItem {
   path: string;
@@ -111,6 +106,10 @@ const Sidebar: React.FC = () => {
         {/* Used Space */}
         <div className="mt-[100px]">
           <UsedSpace />
+        </div>
+        {/* User */}
+        <div className="mt-[50px]">
+          <User />
         </div>
       </nav>
     </aside>

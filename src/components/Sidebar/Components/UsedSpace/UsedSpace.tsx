@@ -18,8 +18,8 @@ const UsedSpace = () => {
         ></div>
       </div>
       <div className="flex items-center gap-2  mt-2">
-        <p className="text-health-off-white">Dismiss all</p>
-        <p className="text-white">Upgrade Plan</p>
+        <p className="text-health-off-white cursor-pointer">Dismiss all</p>
+        <p className="text-white cursor-pointer">Upgrade Plan</p>
       </div>
     </div>
   );

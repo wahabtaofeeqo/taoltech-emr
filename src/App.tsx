@@ -10,7 +10,7 @@ import Resources from "./module/Resources/Resources";
 import Messages from "./module/Messages/Messages";
 import Consultation from "./module/Consultation/Consultation";
 import Support from "./module/Support/Support";
-import Settings from "./module/Settings.tsx/Settings";
+import Settings from "./module/Settings/Settings";
 
 function App() {
   return (

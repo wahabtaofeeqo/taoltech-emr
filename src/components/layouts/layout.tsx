@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import NavBar from "../NavBar/NavBar";
+// import NavBar from "../NavBar/NavBar";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Dashboard = () => {
@@ -9,7 +9,7 @@ const Dashboard = () => {
       <div className="flex flex-1">
         <Sidebar />
         <div
-          className="flex-1 px-5 mt-12 bg-deskit-gray-200 overflow-y-scroll dark:bg-deskit-black-500  "
+          className="flex-1 bg-gray-100 overflow-y-scroll  "
           style={{
             scrollbarWidth: "none" /* For Firefox */,
             scrollbarColor:

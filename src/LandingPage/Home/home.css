@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.img {
+    width: 80%;
+    position: absolute;
+    top: -5.5%;
+}
+.outer {
+    margin-top: 6rem;
+}
+
+.dot, .dot2 {
+    position: relative;
+    border-left: 1px solid #00000059;
+    border-style:dotted;
+}
+.dot3 {
+    border: none;
+}
+.dot::before {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background: #17263F;
+    border-radius: 50%;
+    left: -1.5%;
+}
+.dot2::before {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #00000059;
+    left: -1.5%;
+}
+
+.h1 {
+    font-family: "Montserrat";
+}
+
+.svg1 {
+    bottom: -4%;
+    left: -4%;
+}
+
+.svg2 {
+    top: -7%;
+    right: -6%;
+}
+.under {
+    text-decoration: underline;
+}
+.react-tel-input .form-control {
+    width: 100% !important;
+    height: auto !important;
+}
+

@@ -33,9 +33,9 @@ const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col items-center">
-        <div className="bg-[#F0F5FE] w-full max-w-md mx-auto mt-10 p-6 shadow-md rounded-md">
+        <div className="bg-[#F0F5FE] w-full py-4 px-4 max-w-md mx-auto mt-10 ms:p-4 xl:p-6 shadow-md rounded-md">
             <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="name" className="block text-sm ms:text-xs xl:text-sm font-medium text-gray-700">
                 Name
                 </label>
                 <input
@@ -44,13 +44,13 @@ const ContactForm: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full text-xs px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 ms:text-xs md:text-sm"
                 placeholder="John Doe"
                 required
                 />
             </div>
             <div className="mb-4">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="phone" className="block  text-sm  ms:text-xs xl:text-sm font-medium text-gray-700">
                 Email
                 </label>
                 <input
@@ -59,20 +59,20 @@ const ContactForm: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 text-xs border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 ms:text-xs md:text-sm"
                 placeholder="example@gmail.com"
                 required
                 />
             </div>
             <div className="mb-4">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="phone" className="block text-sm ms:text-xs xl:text-sm font-medium text-gray-700">
                 Phone number
                 </label>
                 <PhoneInput
                 country={'us'}
                 value={formData.phone}
                 onChange={(phone: string) => setFormData({ ...formData, phone })}
-                inputClass="w-full h-12 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                inputClass="w-full h-12 px-3 py-2 border text-xs border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent ms:text-xs md:text-sm ms:py-1"
                 buttonClass="bg-gray-100 border border-gray-300 rounded-l-md"
                 containerClass="flex w-full"
                 dropdownClass="w-full max-h-56 overflow-auto bg-white border border-gray-300 rounded-md shadow-lg"
@@ -80,7 +80,7 @@ const ContactForm: React.FC = () => {
               />
             </div>
             <div className="mb-4">
-                <label htmlFor="text" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="text" className="block text-sm font-medium text-gray-700 ms:text-xs xl:text-sm">
                 Message
                 </label>
                 <textarea
@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
                 name="text"
                 value={formData.text}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="mt-1 block w-full text-xs px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 ms:text-sm ms:py-1"
                 rows={4}
                 required
                 />
@@ -100,7 +100,7 @@ const ContactForm: React.FC = () => {
         </div>
         <button
             type="submit"
-            className="max-w-md mt-10 w-full px-4 py-4 bg-indigo-600 text-white font-medium text-sm leading-tight rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="max-w-md mt-10 w-full px-4 py-3 ms:py-2 md:py-2 xl:py-4 bg-indigo-600 text-white font-medium text-sm leading-tight rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
         >
             Send Message
         </button>

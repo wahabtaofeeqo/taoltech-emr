@@ -15,33 +15,33 @@ const Footer : React.FC = () => {
   }
 
   return (
-    <footer className="bg-[#17263F] flex flex-col items-center justify-between px-12 py-10 min-h-[80vh] w-full">
-      <div className="flex justify-between items-center w-full">
+    <footer className="bg-[#17263F] flex flex-col items-center justify-between px-4 py-8 min-h-[70vh] w-full ms:px-6 md:px-6 lg:px-6  ms:min-h-[45vh]  md:min-h-[45vh] lg:min-h-[45vh] xl:min-h-[80vh]">
+      <div className="flex justify-between flex-col items-center sm:flex-row w-full flex-wrap">
         <div className=" flex-1">
           <h1 className="text-white">Logo</h1>
-          <p className="p text-white mt-6 font-normal text-base">Discover our dedication to transforming healthcare with innovative technology. Learn about our journey and how our EMR platform is designed to meet the needs of modern healthcare providers.</p>
+          <p className="p text-xs text-white mt-6 font-normal text-base ms:text-sm md:text-sm">Discover our dedication to transforming healthcare with innovative technology. Learn about our journey and how our EMR platform is designed to meet the needs of modern healthcare providers.</p>
         </div>
-          <ul className="flex flex-1 justify-end">
-              <li className="px-3"><Link  className='text-base font-medium text-[#FFFFFF] p' to="/">Home</Link></li>
-              <li className="px-3"><Link className='text-base font-medium text-[#FFFFFF] p' to="/about">About</Link></li>
-              <li className="px-3"><Link className='text-base font-medium text-[#FFFFFF] p' to="/support">Support</Link></li>
-              <li className="px-3"><Link className='text-base font-medium text-[#FFFFFF] p' to="/pricing">Pricing</Link></li>
+          <ul className="flex flex-1 justify-end mt-6 sm:mt-0">
+              <li className="px-2 ms:px-3"><Link  className='text-xs font-medium text-[#FFFFFF] p  ms:text-sm md:text-sm' to="/">Home</Link></li>
+              <li className="px-2 ms:px-3"><Link className='text-xs font-medium text-[#FFFFFF] p ms:text-sm md:text-sm' to="/about">About</Link></li>
+              <li className="px-2 ms:px-3"><Link className='text-xs font-medium text-[#FFFFFF] p ms:text-sm md:text-sm' to="/support">Support</Link></li>
+              <li className="px-2 ms:px-3"><Link className='text-xs font-medium text-[#FFFFFF] p ms:text-sm md:text-sm' to="/pricing">Pricing</Link></li>
           </ul>
       </div>
-      <div className="flex w-full justify-between items-center">
+      <div className="flex w-full justify-between items-center flex-wrap mt-6 sm:mt-0">
         <span className="text-white text-sm">Subscribe to our newsletter</span>
-        <div className="flex rounded-lg border-[1px] border-white px-2 py-2">
-          <input className="bg-transparent outline-none mr-2" type="email" value={emailForm.email} onChange={(e) => setEmail({...emailForm, email: e.target.value})} placeholder='Enter Your Email' />
-          <button className="px-6 py-3 bg-[#175CD3] rounded-lg" onClick={submitEmail}><Link className="text-sm text-white font-normal" to="/demo">Subscribe</Link></button>
+        <div className="flex rounded-lg border-[1px] border-white px-2 py-2 mt-4  sm:mt-0">
+          <input className="bg-transparent outline-none h-20px  mr-2 md:h-[20px] lg:h-[30px] text-xs" type="email" value={emailForm.email} onChange={(e) => setEmail({...emailForm, email: e.target.value})} placeholder='Enter Your Email' />
+          <button className="px-6 py-1 bg-[#175CD3] rounded-lg ms:py-1 ms:px-4 md:py-1 lg:py-1 xl:py-3" onClick={submitEmail}><Link className="text-sm text-white font-normal ms:text-xs" to="/demo">Subscribe</Link></button>
         </div>
-        <div>
-          <Link className=" px-4 text-white text-xl" to="twitter"><i className='bx bxl-twitter'></i></Link>
-          <Link className=" px-4 text-white text-xl" to="facebook"><i className='bx bxl-facebook'></i></Link>
-          <Link className=" px-4 text-white text-xl" to="instagram"><i className='bx bxl-instagram'></i></Link>
+        <div className="mt-6  sm:mt-0">
+          <Link className=" px-4 text-white text-xl ms:text-lg" to="twitter"><i className='bx bxl-twitter'></i></Link>
+          <Link className=" px-4 text-white text-xl ms:text-lg" to="facebook"><i className='bx bxl-facebook'></i></Link>
+          <Link className=" px-4 text-white text-xl ms:text-lg" to="instagram"><i className='bx bxl-instagram'></i></Link>
         </div>
 
-      </div>
-      <span className="mt-16 text-white text-base">Blank. All right reserved. © {new Date().getFullYear()}</span>
+      </div> 
+      <span className="mt-16 text-white text-xs ms:text-sm">Blank. All right reserved. © {new Date().getFullYear()}</span>
     </footer>
   )
 }

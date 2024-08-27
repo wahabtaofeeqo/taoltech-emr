@@ -3,7 +3,7 @@
 .img {
     width: 80%;
     position: absolute;
-    top: -5.5%;
+    top: -6%;
 }
 .outer {
     margin-top: 6rem;
@@ -56,5 +56,32 @@
 .react-tel-input .form-control {
     width: 100% !important;
     height: auto !important;
+    font-size:0.75rem !important;
 }
 
+/*@media screen and (max-width:1280px) {
+
+    .outer {
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+    }
+
+    .img {
+        top: -2%;
+        width: 100%;
+    }
+}*/
+@media screen and (max-width:850px) {
+    .img {
+        top: 12%;
+        width: 100%;
+    }
+    .dot::before {
+        left: -2.5%;
+    }
+    
+    .dot2::before {
+        left: -2.5%;
+    }
+}

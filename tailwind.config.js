@@ -9,6 +9,16 @@ export default {
         "health-secondary-cyan": "#009FC2",
       },
     },
+    screens: {
+      'xsm': '385px',
+      'xs': '395px',
+      'xss': '410px',
+      'sm': '520px',
+      'ms': '728px',
+      'md': '800px',
+      'lg': '1024px', 
+      'xl': '1200px',
+    }
   },
   plugins: [],
 };

@@ -4,13 +4,14 @@ import Layout from "./components/layouts/layout";
 import Index from "./module/index/Index";
 import Home from "./module/Home/Home";
 import Registration from "./module/Registration/Registration";
-import WardMgt from "./module/WardMgt/WardMgt";
-import Patients from "./module/Patients/Patients";
+import WardMgt from "./module/WardMgt/doctor/WardMgt";
+import Patients from "./module/Patients/doctor/Patients";
 import Resources from "./module/Resources/Resources";
 import Messages from "./module/Messages/Messages";
 import Consultation from "./module/Consultation/Consultation";
 import Support from "./module/Support/Support";
 import Settings from "./module/Settings/Settings";
+import PatientDetails from "./module/Patients/doctor/PatientsData"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="messages" element={<Messages />} />
             <Route path="support" element={<Support />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="patients/patientDetails" element={<PatientDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

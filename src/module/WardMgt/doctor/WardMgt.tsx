@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { IoNotificationsOutline } from "react-icons/io5";
 
 
-
 type TableProps = {
   headers: string[];
   data: string[][];

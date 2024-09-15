@@ -4,12 +4,12 @@ import Sidebar from "../Sidebar/Sidebar";
 
 const Dashboard = () => {
   return (
-    <main className="flex h-screen bg-white text-deskit-blue-300 flex-col">
+    <main className="flex flex-col h-screen bg-white text-deskit-blue-300">
       {/* <NavBar /> */}
       <div className="flex flex-1">
         <Sidebar />
         <div
-          className="flex-1 bg-gray-100 overflow-y-scroll  "
+          className="flex-1 overflow-y-scroll bg-gray-100 "
           style={{
             scrollbarWidth: "none" /* For Firefox */,
             scrollbarColor:

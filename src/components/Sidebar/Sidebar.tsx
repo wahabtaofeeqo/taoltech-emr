@@ -18,9 +18,9 @@ interface LinkItem {
 }
 
 const Sidebar: React.FC = () => {
-  const location = useLocation<{
-    pathname: string;
-  }>(); // Typing the location object
+  // const location = useLocation<{
+  //   pathname: string;
+  // }>(); // Typing the location object
 
   const links: LinkItem[] = [
     {

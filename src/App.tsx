@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layouts/layout";
-import Index from "./module/index/Index";
 import Home from "./module/Home/Home";
 import Registration from "./module/Registration/Registration";
 import WardMgt from "./module/WardMgt/WardMgt";
@@ -14,6 +13,7 @@ import Settings from "./module/Settings/Settings";
 import LayoutLanding from './LandingPage/Layout';
 import LandingHome from './LandingPage/component/Home';
 import About from './LandingPage/component/about';
+
 
 function App() {
   return (

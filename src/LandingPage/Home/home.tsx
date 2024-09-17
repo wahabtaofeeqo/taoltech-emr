@@ -18,36 +18,36 @@ import ContactForm from './contact';
 
 const HomeComp = () => {
   return (
-    <div className="mt-20 w-full md:mt-10 lg:mt-12">
-        <section className="section-1 flex flex-col px-4 w-full ms:flex-row ms:h-[38vh] md:h-[35vh] md:min-h-[35vh] lg:h-[37vh] lg:min-h-[37vh] xl:min-h-screen xl:px-16 xl:h-screen xl:py-12">
+    <div className="mt-20 w-full mdd:mt-10 lgg:mt-12">
+        <section className="section-1 flex flex-col px-4 w-full ms:flex-row ms:h-[38vh] mdd:h-[35vh] mdd:min-h-[35vh] lgg:h-[37vh] lgg:min-h-[37vh] xll:min-h-screen xll:px-16 xll:h-screen xll:py-12">
         <div className=" flex flex-col  py-6 ms:py-16  justify-center ms:h-full ms:w-[50vw]">
-            <h1 className="font-bold text-lg sm:text-xl max-w-[70%] ms:max-w-[80%] md:text-2xl lg:text-3xl lg:leading-[2.5rem] xl:text-5xl xl:leading-[3.5rem]">Revolutionizing <span className="text-[#175CD3]">Hospital</span> Management and Patient Care</h1>
-            <p className="text-xs text-black font-light max-w-[90%] leading-5 mt-2 ms:text-xs ms:max-w-[70%] md:text-xs lg:text-xs xl:text-sm">Empower Your Healthcare Practice with Our Comprehensive, Cloud-Based EMR Platform</p>
-            <button className="px-2 py-2 bg-[#175CD3] rounded-lg w-[6rem] ms:w-32 ms:rounded-xl flex items-center justify-center mt-8 text-center ms:py-2 ms:px-1 md:py-2 md:px-2 ms:w-24  md:w-24 lg:w-28 lg:py-3 xl:w-32 xl:px-6 xl:py-3"><Link className="text-xs text-center text-white font-normal ms:text-xs md:text-xs lg:text-sm" to="/demo">Get started</Link></button>
+            <h1 className="font-bold text-lg smm:text-xl max-w-[70%] ms:max-w-[80%] mdd:text-2xl lgg:text-3xl lgg:leading-[2.5rem] xll:text-5xl xll:leading-[3.5rem]">Revolutionizing <span className="text-[#175CD3]">Hospital</span> Management and Patient Care</h1>
+            <p className="text-xs text-black font-light max-w-[90%] leading-5 mt-2 ms:text-xs ms:max-w-[70%] mdd:text-xs lgg:text-xs xll:text-sm">Empower Your Healthcare Practice with Our Comprehensive, Cloud-Based EMR Platform</p>
+            <button className="px-2 py-2 bg-[#175CD3] rounded-lg w-[6rem] ms:w-32 ms:rounded-xl flex items-center justify-center mt-8 text-center ms:py-2 ms:px-1 mdd:py-2 mdd:px-2 ms:w-24  mdd:w-24 lgg:w-28 lgg:py-3 xll:w-32 xll:px-6 xll:py-3"><Link className="text-xs text-center text-white font-normal ms:text-xs mdd:text-xs lgg:text-sm" to="/demo">Get started</Link></button>
         </div>
         <div className="w-full  h-full ms:h-full flex items-center justify-center relative ms:w-[50vw]">
-            <div className="outer bg-[#6690D9] xs:w-[300px] xs:h-[300px] xss:w-[320px] xss:w-[320px] sm:w-[350px] sm:h-[350px] px-10 py-10 ms:py-8 w-[280px] h-[280px] ms:h-[290px] ms:w-[290px] rounded-full md:w-[320px] md:h-[320px] lg:h-[400px] lg:w-[400px] xl:w-[500px] xl:h-[500px]">
+            <div className="outer bg-[#6690D9] xs:w-[300px] xs:h-[300px] xss:w-[320px] xss:w-[320px] smm:w-[350px] smm:h-[350px] px-10 py-10 ms:py-8 w-[280px] h-[280px] ms:h-[290px] ms:w-[290px] rounded-full mdd:w-[320px] mdd:h-[320px] lgg:h-[400px] lgg:w-[400px] xll:w-[500px] xll:h-[500px]">
                 <div className="inner bg-[#8F8F8F] px-3 py-3 h-full w-full rounded-full "></div>  
             </div>
-            <img className="img w-full top-[7%] xsm:top-[2%] xs:top-[5%] xss:top-[-3%] sm:w-[90%] sm:top-[-1%] absolute ms:top-6 md:w-full md:top-[7%] lg:top-[3.5%] lg:w-full xl:w-[95%] xl:top-[-6%]" src={hero1} alt="hero" />
+            <img className="img w-full top-[7%] xsm:top-[2%] xs:top-[5%] xss:top-[-3%] smm:w-[90%] smm:top-[-1%] absolute ms:top-6 mdd:w-full mdd:top-[7%] lgg:top-[3.5%] lgg:w-full xll:w-[95%] xll:top-[-6%]" src={hero1} alt="hero" />
         </div>
         </section> 
-        <section className="flex flex-row px-4 gap-4 py-8 w-full min-h-[40vh] ms:py-12 md:py-16 ms:flex-row min-h-[40vh] bg-[#F0F5FE] ms:gap-x-12 ms:py-16 ms:min-h-[45vh] ms:h-[45vh] md:px-6 md:h-[45vh]  md:min-h-[45vh] lg:h-[40vh] lg:min-h-[40vh] xl:px-16 xl:min-h-screen xl:h-screen">
+        <section className="flex flex-row px-4 gap-4 py-8 w-full min-h-[40vh] ms:py-12 mdd:py-16 ms:flex-row min-h-[40vh] bg-[#F0F5FE] ms:gap-x-12 ms:py-16 ms:min-h-[45vh] ms:h-[45vh] mdd:px-6 mdd:h-[45vh]  mdd:min-h-[45vh] lgg:h-[40vh] lgg:min-h-[40vh] xll:px-16 xll:min-h-screen xll:h-screen">
             <div className="flex w-[30%]  ms:w-[50%] items-center h-full">
-                <img className="h-[25vh] w-full sm:h-full rounded-3xl" src={hero2} alt="" />
+                <img className="h-[25vh] w-full smm:h-full rounded-3xl" src={hero2} alt="" />
             </div>
             <div className="flex w-[70%] h-full flex-col justify-center ms:w-[50%]">
-                <h1 className="text-[#175CD3] text-lg sm:text-xl ms:text-2xl md:text-2xl xl:text-4xl font-bold ">About us</h1>
-                <p className="mt-4  text-xs font-normal ms:text-xs md:text-sm xl:text-base">EMR software is a digital version of the traditional paper-based medical records system used in healthcare. It is designed to store, manage, and retrieve patient health information, including medical history, diagnoses, treatments, prescriptions, and test results. This software facilitates efficient healthcare delivery by enabling quick access to patient data, improving accuracy, and streamlining workflow for healthcare providers.</p>
-                <button className="px-2 py-2 bg-[#175CD3] w-[6rem] rounded-lg ms:w-32 ms:rounded-xl md:rounded-xl flex items-center mt-8 text-center ms:px-2  ms:w-24 ms:py-3 md:w-28 md:px-3 md:py-2 justify-center lg:w-32 lg:rounded-xl lg:px-6 lg:py-3 xl:px-6 xl:w-32"><Link className="text-xs text-center text-white font-normal ms:text-xs lg:text-sm" to="/demo">Learn More</Link></button>
+                <h1 className="text-[#175CD3] text-lg smm:text-xl ms:text-2xl mdd:text-2xl xll:text-4xl font-bold ">About us</h1>
+                <p className="mt-4  text-xs font-normal ms:text-xs mdd:text-sm xll:text-base">EMR software is a digital version of the traditional paper-based medical records system used in healthcare. It is designed to store, manage, and retrieve patient health information, including medical history, diagnoses, treatments, prescriptions, and test results. This software facilitates efficient healthcare delivery by enabling quick access to patient data, improving accuracy, and streamlining workflow for healthcare providers.</p>
+                <button className="px-2 py-2 bg-[#175CD3] w-[6rem] rounded-lg ms:w-32 ms:rounded-xl mdd:rounded-xl flex items-center mt-8 text-center ms:px-2  ms:w-24 ms:py-3 mdd:w-28 mdd:px-3 mdd:py-2 justify-center lgg:w-32 lgg:rounded-xl lgg:px-6 lgg:py-3 xll:px-6 xll:w-32"><Link className="text-xs text-center text-white font-normal ms:text-xs lg:text-sm" to="/demo">Learn More</Link></button>
             </div>
         </section>
-        <section className="flex flex-col px-4 py-10 bg-white md:min-h-[40vh] lg:min-h-[37vh] lg:h-[37vh] xl:min-h-screen xl:h-screen lg:px-6 xl:px-16">
-            <h1 className="text-[#175CD3] text-lg ms:text-2xl md:text-3xl font-bold">Key Features</h1>
-            <p className="mt-4 text-xs font-normal max-w-[90%] ms:text-sm ms:text-xs md:max-w-[70%] md:text-sm lg:text-sm xl:text-sm xl:max-w-[40%]">The EMR platform is scalable, accessible, and user-centric. It ensures fast load times and efficient data processing, supporting up to 10,000 users.</p>
-            <div className="grid grid-cols-2 justify-items-center justify-content-center ms:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2 mt-14 ms:gap-2 md:gap-2 md:mt-16 xl:mt-20 xl:gap-4">
-                <div className="border border-[#00000033] flex flex-col items-center px-2 py-2 text-center rounded-xl md:px-2 lg:px-8 xl:py-8">
-                    <svg className="h-1/2 w-[90%]  flex items-center ms:w-[80%] md:w-[90%] lg:w-[90%] xl:w-full" width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <section className="flex flex-col px-4 py-10 bg-white mdd:min-h-[40vh] lgg:min-h-[37vh] lgg:h-[37vh] xll:min-h-screen xll:h-screen lgg:px-6 xll:px-16">
+            <h1 className="text-[#175CD3] text-lg ms:text-2xl mdd:text-3xl font-bold">Key Features</h1>
+            <p className="mt-4 text-xs font-normal max-w-[90%] ms:text-sm ms:text-xs mdd:max-w-[70%] mdd:text-sm lgg:text-sm xll:text-sm xll:max-w-[40%]">The EMR platform is scalable, accessible, and user-centric. It ensures fast load times and efficient data processing, supporting up to 10,000 users.</p>
+            <div className="grid grid-cols-2 justify-items-center justify-content-center ms:grid-cols-5 mdd:grid-cols-5 lgg:grid-cols-5 xll:grid-cols-5 gap-2 mt-14 ms:gap-2 mdd:gap-2 mdd:mt-16 xll:mt-20 xll:gap-4">
+                <div className="border border-[#00000033] flex flex-col items-center px-2 py-2 text-center rounded-xl mdd:px-2 lgg:px-8 xll:py-8">
+                    <svg className="h-1/2 w-[90%]  flex items-center ms:w-[80%] mdd:w-[90%] lgg:w-[90%] xll:w-full" width="164" height="164" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M164 125.427H0V125.509H164V125.427Z" fill="#EBEBEB"/>
                     <path d="M147.566 130.705H136.703V130.787H147.566V130.705Z" fill="#EBEBEB"/>
                     <path d="M108.639 131.597H105.789V131.679H108.639V131.597Z" fill="#EBEBEB"/>
@@ -191,11 +191,11 @@ const HomeComp = () => {
                     <path opacity="0.2" d="M65.6335 94.7919C63.9739 94.5984 63.0391 92.1023 63.0391 92.1023C63.3981 92.0379 63.7606 91.9952 64.1247 91.9744C64.7038 92.8707 65.2085 93.813 65.6335 94.7919Z" fill="black"/>
                     <path d="M62.1852 89.7834C63.9892 89.5145 68.0236 90.9774 68.3746 90.961C68.7256 90.9446 72.6386 87.8679 72.6386 87.8679L73.6554 88.7634C73.6554 88.7634 69.5554 92.9913 68.7124 93.0274C67.8695 93.0634 63.4644 92.7453 63.4644 92.7453C63.4644 92.7453 62.3853 92.3615 62.1787 91.3874C62.0528 90.8598 62.0551 90.3099 62.1852 89.7834Z" fill="#175CD3"/>
                     </svg>
-                    <h4 className="font-bold mt-8 text-sm sm:text-sm ms:text-sm md:text-sm lg:text-base">Scalability</h4>
-                    <span className="font-light text-xs mt-2  ms:text-xs md:text-xs xl:text-sm">Easily manage patient records as your practice grows.</span>
+                    <h4 className="font-bold mt-8 text-sm smm:text-sm ms:text-sm mdd:text-sm lgg:text-base">Scalability</h4>
+                    <span className="font-light text-xs mt-2  ms:text-xs mdd:text-xs xll:text-sm">Easily manage patient records as your practice grows.</span>
                 </div>
-                <div className="border  border-[#00000033] flex flex-col items-center px-2 py-2 text-center rounded-xl  md:px-2 lg:px-8 xl:py-8">
-                    <svg className="h-1/2 w-[90%]  flex items-center ms:w-[80%] md:w-[90%] lg:w-[90%] xl:w-full"  width="141" height="141" viewBox="0 0 141 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="border  border-[#00000033] flex flex-col items-center px-2 py-2 text-center rounded-xl  mdd:px-2 lgg:px-8 xll:py-8">
+                    <svg className="h-1/2 w-[90%]  flex items-center ms:w-[80%] mdd:w-[90%] lgg:w-[90%] xll:w-full"  width="141" height="141" viewBox="0 0 141 141" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M70.2364 136.594C106.671 136.594 136.207 119.541 136.207 98.5056C136.207 77.47 106.671 60.4172 70.2364 60.4172C33.8018 60.4172 4.26562 77.47 4.26562 98.5056C4.26562 119.541 33.8018 136.594 70.2364 136.594Z" fill="#F0F0F0"/>
                         <path d="M108.119 111.722C103.793 109.224 103.793 105.175 108.119 102.678C112.445 100.18 119.46 100.18 123.786 102.678C128.112 105.175 128.112 109.224 123.786 111.722C119.46 114.219 112.445 114.219 108.119 111.722Z" fill="#E0E0E0"/>
                         <path d="M20.1335 112.069L8.75434 105.5C8.11314 105.131 8.11314 104.529 8.75434 104.159L74.9435 65.9445C75.3033 65.7622 75.7009 65.6672 76.1041 65.6672C76.5074 65.6672 76.905 65.7622 77.2647 65.9445L88.6467 72.5133C89.2879 72.8829 89.2879 73.4849 88.6467 73.8545L22.4575 112.069C22.0973 112.251 21.6993 112.346 21.2955 112.346C20.8918 112.346 20.4938 112.251 20.1335 112.069Z" fill="#E0E0E0"/>
@@ -306,11 +306,11 @@ const HomeComp = () => {
                         <path d="M121.742 60.7168C122.456 60.8148 123.142 60.9744 123.565 61.5568C123.988 62.1392 124.327 62.9568 123.912 65.1828C123.595 66.7483 123.17 68.2901 122.641 69.7972C122.641 69.7972 120.978 70.5084 119.211 68.7052L120.426 64.0068C120.426 64.0068 120.622 60.952 121.742 60.7168Z" fill="#455A64"/>
                     </svg>
 
-                    <h4 className="font-bold mt-8 text-sm sm:text-sm ms:text-sm md:text-sm lg:text-base">Accessibility</h4>
-                    <span className="font-light text-xs mt-2 ms:text-xs md:text-xs xl:text-sm">Access patient data from anywhere, at any time.</span>
+                    <h4 className="font-bold mt-8 text-sm smm:text-sm ms:text-sm mdd:text-sm lgg:text-base">Accessibility</h4>
+                    <span className="font-light text-xs mt-2 ms:text-xs mdd:text-xs xll:text-sm">Access patient data from anywhere, at any time.</span>
                 </div>
-                <div className="border  border-[#00000033] flex flex-col items-center px-2 py-8 text-center rounded-xl  md:px-2 lg:px-8 xl:py-8">
-                    <svg className="h-1/2 flex w-[90%]  items-center ms:w-[80%] md:w-[90%]  lg:w-[90%] md:w-[80%]" width="188" height="125" viewBox="0 0 188 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="border  border-[#00000033] flex flex-col items-center px-2 py-8 text-center rounded-xl  mdd:px-2 lgg:px-8 xll:py-8">
+                    <svg className="h-1/2 flex w-[90%]  items-center ms:w-[80%] mdd:w-[90%]  lgg:w-[90%] mdd:w-[80%]" width="188" height="125" viewBox="0 0 188 125" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1062_2575)">
                         <path d="M187.5 0H0.5V125H187.5V0Z" fill="white"/>
                         <path d="M24.4364 105.715C24.4364 105.715 -5.73293 63.9885 30.1711 29.8252C45.2306 15.496 67.7935 15.249 84.0777 18.459C104.336 22.4525 117.721 31.779 133.84 31.6675C155.647 31.5165 169.03 41.0915 175.175 56.2245C185.921 82.686 164.312 105.715 164.312 105.715H24.4364Z" fill="url(#paint0_linear_1062_2575)"/>
@@ -1171,11 +1171,11 @@ const HomeComp = () => {
                         </defs>
                     </svg>
 
-                    <h4 className="font-bold mt-8 text-sm sm:text-sm ms:text-sm md:text-sm">Data Security</h4>
-                    <span className="font-light text-xs mt-2 ms:text-xs md:text-xs xl:text-sm">Ensure the highest level of data protection and privacy.</span>
+                    <h4 className="font-bold mt-8 text-sm smm:text-sm ms:text-sm mdd:text-sm">Data Security</h4>
+                    <span className="font-light text-xs mt-2 ms:text-xs mdd:text-xs xll:text-sm">Ensure the highest level of data protection and privacy.</span>
                 </div>
-                <div className="border  border-[#00000033] flex flex-col items-center px-2 py-8 text-center rounded-xl  md:px-2 lg:px-8 xl:py-8">
-                    <svg  className="h-1/2 flex w-[90%] items-center ms:w-[80%] md:h-[90%] xl:w-full " width="153" height="83" viewBox="0 0 153 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div className="border  border-[#00000033] flex flex-col items-center px-2 py-8 text-center rounded-xl  mdd:px-2 lgg:px-8 xll:py-8">
+                    <svg  className="h-1/2 flex w-[90%] items-center ms:w-[80%] mdd:h-[90%] xll:w-full " width="153" height="83" viewBox="0 0 153 83" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1102_14076)">
                         <path d="M131.111 61.1099C131.065 61.1099 131.017 61.1051 130.969 61.0954C130.702 61.0512 130.496 60.8807 130.389 60.6152C130.259 60.2918 130.306 59.8838 130.502 59.6228C130.654 59.317 131.046 58.9958 131.468 58.8094C131.382 58.6997 131.277 58.6144 131.154 58.5651C130.869 58.4516 130.354 58.4294 129.959 58.6116C129.754 58.7065 129.621 58.8401 129.565 59.0083C129.547 59.0613 129.49 59.0899 129.436 59.0722C129.383 59.0544 129.355 58.9972 129.372 58.9443C129.446 58.7243 129.619 58.5458 129.874 58.4282C130.265 58.2472 130.848 58.2252 131.229 58.3775C131.406 58.4482 131.551 58.5734 131.664 58.7332C131.736 58.7092 131.809 58.6894 131.881 58.6752C132.311 58.5316 132.683 58.5401 132.974 58.7039C133.286 58.8801 133.504 59.2362 133.621 59.7622C133.633 59.8167 133.599 59.8705 133.544 59.8828C133.489 59.8947 133.435 59.8606 133.423 59.806C133.319 59.3382 133.134 59.0265 132.874 58.8797C132.635 58.7447 132.318 58.7417 131.932 58.87C131.879 58.8807 131.824 58.8948 131.769 58.9118C131.98 59.3368 132.014 59.9125 131.875 60.3809C131.736 60.8471 131.456 61.1097 131.111 61.1099ZM131.578 58.9825C131.185 59.1505 130.815 59.4473 130.674 59.7283C130.51 59.948 130.474 60.2828 130.577 60.5399C130.633 60.6795 130.753 60.8548 131.005 60.8966C131.437 60.9813 131.62 60.5243 131.68 60.3236C131.809 59.8925 131.772 59.358 131.578 58.9825Z" fill="black"/>
                         <path d="M46.9738 66.9451C46.4767 66.9451 46.0136 66.7485 45.6605 66.3855C45.5038 66.2094 45.3853 65.9755 45.3137 65.7222C45.0515 65.6996 44.7996 65.6095 44.5773 65.4561C44.1896 65.1887 43.9279 64.751 43.8596 64.2557C43.7824 63.6416 43.9948 63.2638 44.3276 62.7572C44.3582 62.7108 44.4212 62.6976 44.4678 62.7281C44.5146 62.7586 44.5276 62.8213 44.4972 62.8679C44.1808 63.3491 43.9905 63.6723 44.0605 64.229C44.1209 64.6673 44.3515 65.0546 44.6926 65.2899C44.8669 65.4103 45.0622 65.4856 45.2661 65.5135C45.2234 65.2687 45.2242 65.0162 45.2759 64.7875C45.3733 64.3558 45.6305 64.0403 46.019 63.8751C46.2545 63.7751 46.5024 63.8018 46.6828 63.9462C46.8899 64.1118 46.9774 64.4029 46.917 64.7245C46.8133 65.1475 46.334 65.5592 45.801 65.688C45.7085 65.709 45.6157 65.7216 45.5239 65.7262C45.5876 65.926 45.6846 66.1088 45.8089 66.2486C46.14 66.589 46.5867 66.7633 47.0595 66.7411C47.5583 66.7156 48.0216 66.4775 48.3306 66.0874C48.3653 66.0436 48.4291 66.0363 48.4731 66.0706C48.5169 66.1052 48.5244 66.1686 48.4899 66.2124C48.1446 66.6483 47.6272 66.9144 47.0701 66.9427C47.0378 66.9445 47.0056 66.9451 46.9738 66.9451ZM46.3036 64.0171C46.2375 64.0171 46.1682 64.0316 46.0987 64.0613C45.6865 64.2365 45.5312 64.5772 45.4735 64.8322C45.424 65.0509 45.4264 65.2939 45.4726 65.5258C45.5661 65.5242 45.6607 65.5129 45.755 65.4915C46.2108 65.3814 46.6347 65.0257 46.7192 64.6821C46.7646 64.4405 46.704 64.2223 46.5561 64.104C46.4839 64.0464 46.397 64.0171 46.3036 64.0171Z" fill="black"/>
@@ -1303,12 +1303,12 @@ const HomeComp = () => {
                         </defs>
                     </svg>
 
-                    <h4 className="font-bold mt-8 text-sm sm:text-sm ms:text-sm md:text-sm">Seamless Communication</h4>
-                    <span className="font-light text-xs mt-2 ms:text-xs md:text-xs xl:text-sm">Facilitate communication among healthcare providers.</span>
+                    <h4 className="font-bold mt-8 text-sm smm:text-sm ms:text-sm mdd:text-sm">Seamless Communication</h4>
+                    <span className="font-light text-xs mt-2 ms:text-xs mdd:text-xs xll:text-sm">Facilitate communication among healthcare providers.</span>
                 </div>
                 <div className="col-span-2 flex justify-center ms:col-span-1">
-                    <div className="border mr-20 ml-20 ms:ml-0 ms:mr-0 border-[#00000033] flex flex-col items-center px-2 py-8 text-center rounded-xl  md:px-2 lg:px-8 xl:py-8">
-                        <svg  className="h-1/2  w-[90%] flex items-center ms:w-[80%] md:h-[90%]" width="102" height="103" viewBox="0 0 102 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="border mr-20 ml-20 ms:ml-0 ms:mr-0 border-[#00000033] flex flex-col items-center px-2 py-8 text-center rounded-xl  mdd:px-2 lgg:px-8 xll:py-8">
+                        <svg  className="h-1/2  w-[90%] flex items-center ms:w-[80%] mdd:h-[90%]" width="102" height="103" viewBox="0 0 102 103" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1062_13683)">
                         <path d="M102 0H0V103H102V0Z" fill="white"/>
                         <path d="M90.9327 48.4872C89.8378 43.4029 87.99 38.483 85.5046 33.944C80.4187 24.6552 72.5896 16.8128 63.0453 12.5175C48.5325 5.98627 31.5256 8.74606 20.1569 20.1646C14.1901 26.1576 10.8976 34.0229 10.5102 42.508C10.113 51.2117 14.3633 60.7841 19.2632 67.6919C23.0184 72.9861 27.6706 77.5626 32.7666 81.5032C37.0259 84.7969 42.4572 89.2142 47.7652 90.4747C54.4924 92.072 61.5004 92.938 68.3101 91.7601C75.1198 90.5822 81.748 87.1789 85.8512 81.5129C90.4298 75.1905 92.2024 66.1245 92.0798 58.4071C92.0269 55.0711 91.6344 51.7455 90.9327 48.4872Z" fill="#175CD3"/>
@@ -1473,124 +1473,124 @@ const HomeComp = () => {
                         </clipPath>
                         </defs>
                         </svg>
-                        <h4 className="font-bold mt-8 text-sm sm:text-sm ms:text-sm md:text-sm">User-Centric Design</h4>
-                        <span className="font-light text-xs mt-2 ms:text-xs md:text-xs">Intuitive interface designed for healthcare professionals.</span>
+                        <h4 className="font-bold mt-8 text-sm smm:text-sm ms:text-sm mdd:text-sm">User-Centric Design</h4>
+                        <span className="font-light text-xs mt-2 ms:text-xs mdd:text-xs">Intuitive interface designed for healthcare professionals.</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section className="flex flex-col items-center px-4 py-6 mt-0 sm:py-10 sm:min-h-[80vh] w-full bg-white ms:px-6 md:px-6 lg:px-6 ms:min-h-[50vh] md:min-h-[50vh]  md:mt-2 lg:min-h-[60vh] lg:px-12 xl:min-h-screen xl:px-16 ms:mt-16">
-            <h1 className="text-[#175CD3] text-lg ms:text-2xl md:text-3xl">Why Choose Our EMR Platform?</h1>
-            <p className="text-[0.6rem] sm:text-xs text-center max-w-[100%] mt-6 font-light  ms:text-base ms:max-w-[90%] ms:text-xs md:max-w-[90%] md:text-base md:text-sm lg:max-w-[70%] lg:text-base  xl:max-w-[70%] xl:text-base">Our EMR platform combines advanced technology with an easy-to-use interface, ensuring secure, scalable performance. It reduces administrative burdens and boosts clinical efficiency, allowing your team to focus on delivering excellent patient care.</p>
-            <div className="flex mt-8 flex-col  sm:flex-row items-center justify-center border-b-[6px] border-[#17263F] sm:mt-12 md:mt-14 lg:mt-12 xl:mt-20">
-                <div className="flex-1 flex flex-col gap-y-10 mt-6  sm:mt-12 md:mt-28 xl:mt-36">
+        <section className="flex flex-col items-center px-4 py-6 mt-0 smm:py-10 smm:min-h-[80vh] w-full bg-white ms:px-6 mdd:px-6 lgg:px-6 ms:min-h-[50vh] mdd:min-h-[50vh]  mdd:mt-2 lgg:min-h-[60vh] lgg:px-12 xll:min-h-screen xll:px-16 ms:mt-16">
+            <h1 className="text-[#175CD3] text-lg ms:text-2xl mdd:text-3xl">Why Choose Our EMR Platform?</h1>
+            <p className="text-[0.6rem] smm:text-xs text-center max-w-[100%] mt-6 font-light  ms:text-base ms:max-w-[90%] ms:text-xs mdd:max-w-[90%] mdd:text-base mdd:text-sm lgg:max-w-[70%] lgg:text-base  xll:max-w-[70%] xll:text-base">Our EMR platform combines advanced technology with an easy-to-use interface, ensuring secure, scalable performance. It reduces administrative burdens and boosts clinical efficiency, allowing your team to focus on delivering excellent patient care.</p>
+            <div className="flex mt-8 flex-col  smm:flex-row items-center justify-center border-b-[6px] border-[#17263F] smm:mt-12 mdd:mt-14 lgg:mt-12 xll:mt-20">
+                <div className="flex-1 flex flex-col gap-y-10 mt-6  smm:mt-12 mdd:mt-28 xll:mt-36">
                     <div className="flex flex-col">
                         <div className="flex items-center  gap-4">
-                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 md:w-14 md:h-14 xl:w-16 xl:h-16" src={nurse} alt="user" />
-                            <h4 className="font-medium text-xs ms:text-sm md:text-base lg:text-base xl:text-base">Efficient Healthcare Delivery</h4>
+                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 mdd:w-14 mdd:h-14 xll:w-16 xll:h-16" src={nurse} alt="user" />
+                            <h4 className="font-medium text-xs ms:text-sm mdd:text-base lgg:text-base xll:text-base">Efficient Healthcare Delivery</h4>
                         </div>
-                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%]  ms:max-w-[90%] ms:text-xs md:max-w-[90%] lg:max-w-[80%] xl:max-w-[80%] md:text-xs lg:text-sm xl:text-sm">Enables healthcare providers to retrieve patient information swiftly, allowing for faster diagnosis and treatment.</p>
+                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%]  ms:max-w-[90%] ms:text-xs mdd:max-w-[90%] lgg:max-w-[80%] xll:max-w-[80%] mdd:text-xs lgg:text-sm xll:text-sm">Enables healthcare providers to retrieve patient information swiftly, allowing for faster diagnosis and treatment.</p>
                     </div>
                     <div className="flex flex-col">
                         <div className="flex items-center gap-4">
-                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-16 xl:h-16" src={nurse2} alt="user" />
-                            <h4 className="font-medium  text-xs ms:text-sm md:text-base lg:text-base xl:text-base">Improved Accuracy</h4>
+                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 mdd:w-14 mdd:h-14 lgg:w-16 lgg:h-16 xll:w-16 xll:h-16" src={nurse2} alt="user" />
+                            <h4 className="font-medium  text-xs ms:text-sm mdd:text-base lgg:text-base xll:text-base">Improved Accuracy</h4>
                         </div>
-                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%] ms:max-w-[90%] ms:text-xs md:text-xs md:max-w-[90%] lg:max-w-[80%] xl:max-w-[80%] lg:text-sm">Automated data entry and standardized forms decrease the likelihood of errors commonly found in manual records.</p>
+                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%] ms:max-w-[90%] ms:text-xs mdd:text-xs mdd:max-w-[90%] lgg:max-w-[80%] xll:max-w-[80%] lgg:text-sm">Automated data entry and standardized forms decrease the likelihood of errors commonly found in manual records.</p>
                     </div>
                 </div>
-                <div className="flex-1 h-[45vh] sm:h-[55vh] flex justify-center ms:h-[45vh] md:h-[45vh] lg:h-[45vh] xl:h-[100vh]">
+                <div className="flex-1 h-[45vh] smm:h-[55vh] flex justify-center ms:h-[45vh] mdd:h-[45vh] lgg:h-[45vh] xll:h-[100vh]">
                     <img className="h-full w-full" src={doctor}  alt="doctor" />
                 </div>
-                <div className="flex-1 flex flex-col gap-y-10 mt-6 sm:mt-12 items-end ms:mt-24 md:mt-28 xl:mt-36">
-                    <div className="flex flex-col ml-0 ms:ml-4  md:ml-12 lg:ml-14 lg:ml-12 xl:ml-20">
+                <div className="flex-1 flex flex-col gap-y-10 mt-6 smm:mt-12 items-end ms:mt-24 mdd:mt-28 xll:mt-36">
+                    <div className="flex flex-col ml-0 ms:ml-4  mdd:ml-12 lgg:ml-14 lgg:ml-12 xll:ml-20">
                         <div className="flex items-center  gap-4">
-                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-16 xl:h-16" src={nurse3} alt="user" />
-                            <h4 className="font-medium text-xs ms:text-sm md:text-base lg:text-base xl:text-base" >Streamlined Workflow</h4>
+                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 mdd:w-14 mdd:h-14 lgg:w-16 lgg:h-16 xll:w-16 xll:h-16" src={nurse3} alt="user" />
+                            <h4 className="font-medium text-xs ms:text-sm mdd:text-base lgg:text-base xll:text-base" >Streamlined Workflow</h4>
                         </div>
-                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%] ms:text-xs md:text-xs lg:text-sm xl:text-sm">Automated processes and efficient data management save time and enhance productivity for healthcare providers</p>
+                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%] ms:text-xs mdd:text-xs lgg:text-sm xll:text-sm">Automated processes and efficient data management save time and enhance productivity for healthcare providers</p>
                     </div>
-                    <div className="flex flex-col ml-0 ms:ml-4 md:ml-12 lg:ml-12 xl:ml-20">
+                    <div className="flex flex-col ml-0 ms:ml-4 mdd:ml-12 lgg:ml-12 xll:ml-20">
                         <div className="flex items-center gap-4">
-                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-16 xl:h-16" src={nurse4} alt="user" />
-                            <h4 className="font-medium text-xs ms:text-sm md:text-base lg:text-base xl:text-base">Better Patient Outcomes</h4>
+                            <img  className="rounded-full w-8 h-8 object-cover ms:w-14 ms:h-14 mdd:w-14 mdd:h-14 lgg:w-16 lgg:h-16 xll:w-16 xll:h-16" src={nurse4} alt="user" />
+                            <h4 className="font-medium text-xs ms:text-sm mdd:text-base lgg:text-base xll:text-base">Better Patient Outcomes</h4>
                         </div>
-                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%] ms:text-xs md:text-xs lg:text-sm xl:text-sm ">Provides comprehensive patient information, enabling healthcare providers to deliver more personalized and effective treatments</p>
+                        <p className="text-[0.6rem] mt-4 font-light max-w-[100%] ms:text-xs mdd:text-xs lgg:text-sm xll:text-sm ">Provides comprehensive patient information, enabling healthcare providers to deliver more personalized and effective treatments</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section className="flex flex-col px-4 py-10 min-h-screen w-full bg-white gap-12 ms:flex-row ms:px-6 md:px-6 lg:px-6 ms:min-h-[40vh] md:min-h-[40vh] lg:min-h-[40vh]  xl:min-h-screen xl:w-full xl:px-16">
-            <div className="w-full flex h-[30vh] justify-center bg-[#F0F5FE] rounded-2xl ms:w-[50%] ms:h-[40vh] md:h-[40vh] lg:h-full xl:h-full ">
+        <section className="flex flex-col px-4 py-10 min-h-screen w-full bg-white gap-12 ms:flex-row ms:px-6 mdd:px-6 lgg:px-6 ms:min-h-[40vh] mdd:min-h-[40vh] lgg:min-h-[40vh]  xll:min-h-screen xll:w-full xll:px-16">
+            <div className="w-full flex h-[30vh] justify-center bg-[#F0F5FE] rounded-2xl ms:w-[50%] ms:h-[40vh] mdd:h-[40vh] lgg:h-full xll:h-full ">
                 <img src={Drnurse} className="object-cover" alt="doctor-nurse" />
             </div>
             <div className="w-full h-full ms:w-[50%]">
-                <h3 className="text-[#175CD3] text-lg sm:text-2xl font-bold mb-8">Our Simple Process</h3>
+                <h3 className="text-[#175CD3] text-lg smm:text-2xl font-bold mb-8">Our Simple Process</h3>
                 <ul className="ul ml-4">
-                    <li className="dot pb-8 pl-8 ms:pb-4 md:pb-4">
+                    <li className="dot pb-8 pl-8 ms:pb-4 mdd:pb-4">
                         <div className="flex items-center gap-2 mb-2">
                             <div className="bg-[#F0F5FE] flex items-center justify-center rounded-md p-[3px]">
                                 <img  className="w-4" src={profile} alt="profile" />
                             </div>
-                            <h5 className="font-medium text-sm ms:text-sm md:text-sm lg:text-base xl:text-base">Sign Up</h5>
+                            <h5 className="font-medium text-sm ms:text-sm mdd:text-sm lgg:text-base xll:text-base">Sign Up</h5>
                         </div>
                         <p className="font-light text-xs max-w-[80%] ms:max-w-[70%]">Create an Account, begin by registering for our platform using your email address and basic practice information.</p>
                     </li>
-                    <li className="dot2 pb-8 pl-8  ms:pb-4 md:pb-4">
+                    <li className="dot2 pb-8 pl-8  ms:pb-4 mdd:pb-4">
                         <div className="flex items-center gap-2 mb-2">
                             <div className="bg-[#F0F5FE] flex items-center justify-center rounded-md p-[3px]">
                                 <img  className="w-4" src={profile2} alt="profile" />
                             </div>
-                            <h5 className="font-medium text-sm ms:text-sm md:text-sm lg:text-base xl:text-base">Manage Records</h5>
+                            <h5 className="font-medium text-sm ms:text-sm mdd:text-sm lgg:text-base xll:text-base">Manage Records</h5>
                         </div>
                         <p className="font-light text-xs max-w-[80%] ms:max-w-[70%]">Digitally record and store comprehensive patient health data, including medical history, diagnoses,& treatments.</p>
                     </li>
-                    <li className="dot2 pb-8 pl-8 ms:pb-4 md:pb-4">
+                    <li className="dot2 pb-8 pl-8 ms:pb-4 mdd:pb-4">
                         <div className="flex items-center gap-2 mb-2">
                             <div className="bg-[#F0F5FE] flex items-center justify-center rounded-md p-[3px]">
                                 <img  className="w-4" src={profile3} alt="profile" />
                             </div>
-                            <h5 className="font-medium text-sm ms:text-sm md:text-sm lg:text-base xl:text-base">Multi-Device Access</h5>
+                            <h5 className="font-medium text-sm ms:text-sm mdd:text-sm lgg:text-base xll:text-base">Multi-Device Access</h5>
                         </div>
                         <p className="font-light text-xs max-w-[80%] ms:max-w-[70%]">Access patient data from any device, whether it’s a desktop computer, laptop, tablet, or smartphone.</p>
                     </li>
-                    <li className="dot2 dot3 pl-8 ms:pb-4 md:pb-4">
+                    <li className="dot2 dot3 pl-8 ms:pb-4 mdd:pb-4">
                         <div className="flex items-center gap-2 mb-2">
                             <div className="bg-[#F0F5FE] flex items-center justify-center rounded-md p-[3px]">
                                 <img  className="w-4" src={profile4} alt="profile" />
                             </div>
-                            <h5 className="font-medium text-sm ms:text-sm md:text-sm lg:text-base xl:text-base">Collaborate</h5>
+                            <h5 className="font-medium text-sm ms:text-sm mdd:text-sm lgg:text-base xll:text-base">Collaborate</h5>
                         </div>
                         <p className="font-light text-xs max-w-[80%] ms:max-w-[70%]">Share patient records and collaborate with other healthcare providers within and outside your practice</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section className="flex flex-col px-4 py-8 sm:py-16 sm:min-h-[80vh] w-full gap-12 bg-[#F0F5FE] ms:flex-row ms:min-h-[35vh] ms:px-6 md:min-h-[40vh] md:px-6 lg:px-6  lg:min-h-[40vh] xl:min-h-[80vh] xl:px-16">
+        <section className="flex flex-col px-4 py-8 smm:py-16 smm:min-h-[80vh] w-full gap-12 bg-[#F0F5FE] ms:flex-row ms:min-h-[35vh] ms:px-6 mdd:min-h-[40vh] mdd:px-6 lgg:px-6  lgg:min-h-[40vh] xll:min-h-[80vh] xll:px-16">
             <div className="w-full flex flex-col justify-center ms:flex-row">
             <div className=" w-full ms:w-[50%]">
-                <h1 className="text-[#175CD3] text-xl  sm:text-2xl font-bold ms:text-2xl md:text-2xl lg:text-3xl xl:text-3xl">What People Say</h1>
-                <svg  className="mt-10 h-[10px] sm:h-[13px] ms:h-[20px] ms:mt-20 xl:h-[30px]" width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h1 className="text-[#175CD3] text-xl  smm:text-2xl font-bold ms:text-2xl mdd:text-2xl lgg:text-3xl xll:text-3xl">What People Say</h1>
+                <svg  className="mt-10 h-[10px] smm:h-[13px] ms:h-[20px] ms:mt-20 xll:h-[30px]" width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.6673 30.7343C21.6673 28.22 21.0035 26.1114 19.6759 24.4C18.735 23.2229 17.4593 22.4486 15.846 22.08C14.2587 21.7143 12.7579 21.6886 11.4014 22C10.9397 19.2857 11.69 16.4114 13.5949 13.3657C15.4997 10.3229 17.9673 8.03143 20.9775 6.5L16.4146 0C14.1057 1.13143 11.9123 2.56571 9.892 4.3C7.84287 6.03429 6.02463 8.02857 4.40842 10.2829C2.7922 12.5371 1.58004 15.0829 0.800798 17.9686C0.0215519 20.8543 -0.194905 23.7971 0.177402 26.8257C0.662266 30.8257 1.96678 34.0257 4.09095 36.3971C6.21223 38.8 8.85878 40 12.0219 40C14.807 40 17.1188 39.1714 18.9486 37.4914C20.761 35.8457 21.6615 33.5914 21.6615 30.7257L21.6673 30.7343ZM48 30.7343C48 28.22 47.3362 26.1114 46.0086 24.4C45.0677 23.2 43.7863 22.4229 42.1787 22.0657C40.5625 21.7114 39.082 21.6943 37.7342 22.0029C37.2724 19.3171 37.9939 16.4314 39.9045 13.3743C41.8093 10.3457 44.2712 8.06 47.2814 6.51714L42.73 0C40.4211 1.13143 38.2421 2.56571 36.2074 4.3C34.1396 6.05999 32.3032 8.06999 30.7412 10.2829C29.1365 12.54 27.9416 15.0829 27.1624 17.9686C26.3739 20.8526 26.1612 23.8611 26.5361 26.8257C27.0152 30.8257 28.3139 34.0257 30.4323 36.3971C32.5478 38.78 35.1857 39.9743 38.3489 39.9743C41.1398 39.9743 43.4515 39.1457 45.2813 37.4686C47.0909 35.8229 48 33.5686 48 30.7029V30.7343Z" fill="#175CD3"/>
                 </svg>
-                <p className="mt-6 font-medium pl-8 text-xs sm:text-sm ms:text-sm md:text-sm lg:text-base xl:text-base">The best EMR platform we've ever used. It has transformed our workflow and improved patient care.</p>
-                <svg className="h-[10px] sm:h-[13px] ms:h-[20px] xl:h-[30px] float-right mt-4"width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <p className="mt-6 font-medium pl-8 text-xs smm:text-sm ms:text-sm mdd:text-sm lgg:text-base xll:text-base">The best EMR platform we've ever used. It has transformed our workflow and improved patient care.</p>
+                <svg className="h-[10px] smm:h-[13px] ms:h-[20px] xll:h-[30px] float-right mt-4"width="48" height="40" viewBox="0 0 48 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M26.3327 9.26571C26.3327 11.78 26.9965 13.8886 28.3241 15.6C29.265 16.7771 30.5407 17.5514 32.154 17.92C33.7413 18.2857 35.2421 18.3114 36.5986 18C37.0603 20.7143 36.31 23.5886 34.4051 26.6343C32.5003 29.6771 30.0327 31.9686 27.0225 33.5L31.5854 40C33.8943 38.8686 36.0877 37.4343 38.108 35.7C40.1571 33.9657 41.9754 31.9714 43.5916 29.7171C45.2078 27.4629 46.42 24.9171 47.1992 22.0314C47.9784 19.1457 48.1949 16.2029 47.8226 13.1743C47.3377 9.17429 46.0332 5.97429 43.9091 3.60286C41.7878 1.2 39.1412 0 35.9781 0C33.193 0 30.8812 0.828571 29.0514 2.50857C27.239 4.15429 26.3385 6.40857 26.3385 9.27429L26.3327 9.26571ZM0 9.26571C0 11.78 0.663803 13.8886 1.99141 15.6C2.93227 16.8 4.2137 17.5771 5.82125 17.9343C7.43747 18.2886 8.91803 18.3057 10.2658 17.9971C10.7276 20.6829 10.0061 23.5686 8.0955 26.6257C6.19067 29.6543 3.72884 31.94 0.718639 33.4829L5.27001 40C7.57888 38.8686 9.75789 37.4343 11.7926 35.7C13.8604 33.94 15.6968 31.93 17.2588 29.7171C18.8635 27.46 20.0584 24.9171 20.8376 22.0314C21.6261 19.1474 21.8388 16.1389 21.4639 13.1743C20.9848 9.17429 19.6861 5.97429 17.5677 3.60286C15.4522 1.22 12.8143 0.0257149 9.6511 0.0257149C6.86025 0.0257149 4.54848 0.854282 2.7187 2.53143C0.909119 4.17714 0 6.43143 0 9.29714V9.26571Z" fill="#175CD3"/>
                 </svg>
             </div>
-            <div className="flex w-full mt-4 ms:w-[50%] justify-center sm:mt-0">
-                <img  className="w-[90%] sm:w-3/4 h-full object-cover rounded-2xl" src={doctor2} alt="doctor-2" />
+            <div className="flex w-full mt-4 ms:w-[50%] justify-center smm:mt-0">
+                <img  className="w-[90%] smm:w-3/4 h-full object-cover rounded-2xl" src={doctor2} alt="doctor-2" />
             </div>
             </div>
         </section>
-        <section  className="flex px-4 py-10 min-h-[15vh] sm:py-16 sm:min-h-[20vh] w-full gap-4 sm:gap-12 bg-[#17263F] items-center justify-between ms:px-6 ms:min-h-[20vh] md:px-6 md:min-h-[20vh] lg:px-6 lg:min-h-[20vh] xl:min-h-[50vh] xl:px-16">
-            <h1 className="h1 font-bold text-lg max-w-[60%] sm:text-xl sm:max-w-[60%] ms:max-w-[60%] md:max-w-[50%] text-white ms:text-2xl md:text-2xl lg:text-3xl xl:max-w-[50%] xl:text-5xl">Ready to Transform Your Practice?</h1>
-            <button className="px-2 py-2 sm:px-3 bg-[#175CD3] rounded-xl ms:py-2  md:py-3 lg:py-3 xl:py-3 lg:px-6 xl:px-6 "><Link className="text-xs text-white font-normal ms:text-xs md:text-sm lg:text-sm text-xl" to="/demo">Request a Demo</Link></button>
+        <section  className="flex px-4 py-10 min-h-[15vh] smm:py-16 smm:min-h-[20vh] w-full gap-4 smm:gap-12 bg-[#17263F] items-center justify-between ms:px-6 ms:min-h-[20vh] mdd:px-6 mdd:min-h-[20vh] lgg:px-6 lgg:min-h-[20vh] xll:min-h-[50vh] xll:px-16">
+            <h1 className="h1 font-bold text-lg max-w-[60%] smm:text-xl smm:max-w-[60%] ms:max-w-[60%] md:max-w-[50%] text-white ms:text-2xl md:text-2xl lg:text-3xl xll:max-w-[50%] xll:text-5xl">Ready to Transform Your Practice?</h1>
+            <button className="px-2 py-2 smm:px-3 bg-[#175CD3] rounded-xl ms:py-2  md:py-3 lg:py-3 xll:py-3 lg:px-6 xll:px-6 "><Link className="text-xs text-white font-normal ms:text-xs md:text-sm lg:text-sm text-xl" to="/demo">Request a Demo</Link></button>
         </section>
-        <section className="flex flex-col items-center px-6  ms:px-16 py-20 ms:flex-row  md:py-12 min-h-screen ms:px-8 ms:h-[55vh] ms:min-h-[50vh] md:h-[55vh] md:min-h-[45vh] xl:min-h-screen xl:h-screen w-full gap-12 bg-white lg:px-8 lg:py-20 md:px-6 xl:px-16 xl:py-20">
-            <div className="w-full h-[30vh] ms:w-[50%] flex justify-center relative ms:h-[100%] md:h-[90%] lg:h-full xl:h-full">
+        <section className="flex flex-col items-center px-6  ms:px-16 py-20 ms:flex-row  mdd:py-12 min-h-screen ms:px-8 ms:h-[55vh] ms:min-h-[50vh] mdd:h-[55vh] mdd:min-h-[45vh] xll:min-h-screen xll:h-screen w-full gap-12 bg-white lgg:px-8 lgg:py-20 mdd:px-6 xll:px-16 xll:py-20">
+            <div className="w-full h-[30vh] ms:w-[50%] flex justify-center relative ms:h-[100%] mdd:h-[90%] lgg:h-full xll:h-full">
                 <img  className="w-full h-full object-cover rounded-t-[3rem] rounded-b-lg" src={patient} alt="patient" />
-                <svg className='svg2 w-[70px] top-[-25%] right-[-4%] absolute ms:w-[90px] ms:top-[-13%] md:w-[90px] xl:w-[100%] xl:right-[-40%]' width="146" height="146" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='svg2 w-[70px] top-[-25%] right-[-4%] absolute ms:w-[90px] ms:top-[-13%] mdd:w-[90px] xll:w-[100%] xll:right-[-40%]' width="146" height="146" viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M146 73C146 113.317 113.317 146 73 146C32.6832 146 0 113.317 0 73C0 32.6832 32.6832 0 73 0C113.317 0 146 32.6832 146 73ZM14.3279 73C14.3279 105.404 40.5963 131.672 73 131.672C105.404 131.672 131.672 105.404 131.672 73C131.672 40.5963 105.404 14.3279 73 14.3279C40.5963 14.3279 14.3279 40.5963 14.3279 73Z" fill="#F0F5FE"/>
                     <path d="M125.812 73C125.812 102.165 102.169 125.809 73.0038 125.809C43.8385 125.809 20.1953 102.165 20.1953 73C20.1953 43.8347 43.8385 20.1915 73.0038 20.1915C102.169 20.1915 125.812 43.8347 125.812 73ZM30.5602 73C30.5602 96.441 49.5629 115.444 73.0038 115.444C96.4448 115.444 115.447 96.441 115.447 73C115.447 49.559 96.4448 30.5564 73.0038 30.5564C49.5629 30.5564 30.5602 49.559 30.5602 73Z" fill="#F0F5FE"/>
                 </svg>

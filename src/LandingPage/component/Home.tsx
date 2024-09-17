@@ -1,6 +1,6 @@
 import HomeComp from '../Home/home'
 
-const Home = () => {
+const LandingHome = () => {
   return (
     <>
     <HomeComp />
@@ -8,4 +8,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default LandingHome

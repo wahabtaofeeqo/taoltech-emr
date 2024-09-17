@@ -9,7 +9,6 @@ interface StaffInformation {
   image: string;
 }
 
-
    const mockData: StaffInformation[] = [
      {
        name: "Denna Anis",
@@ -43,7 +42,10 @@ interface StaffInformation {
        { value: "option2", label: "Nurses on duty" },
        { value: "option3", label: "Midwives" },
      ];
+
+
 const ContactStaff = () => {
+
   const [selectedOption, setSelectedOption] = useState<string>("");
 
   const handleSelect = (value: string) => {

@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layouts/layout";
 import Home from "./module/Home/Home";
 import Registration from "./module/Registration/Registration";
-import WardMgt from "./module/WardMgt/WardMgt";
-import Patients from "./module/Patients/Patients";
+import WardMgt from "./module/WardMgt/doctor/WardMgt";
+import Patients from "./module/Patients/doctor/Patients";
 import Resources from "./module/Resources/Resources";
 import Messages from "./module/Messages/Messages";
 import Consultation from "./module/Consultation/Consultation";
@@ -13,7 +13,7 @@ import Settings from "./module/Settings/Settings";
 import LayoutLanding from './LandingPage/Layout';
 import LandingHome from './LandingPage/component/Home';
 import About from './LandingPage/component/about';
-
+import PatientDetails from "./module/Patients/doctor/PatientsData"
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
             <Route path="/" element={<LayoutLanding />}>
               <Route index element={<LandingHome />} />
               <Route path="/about" element={<About />} />
-            </Route>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -14,7 +14,7 @@ const Dashboard = () => {
             scrollbarWidth: "none" /* For Firefox */,
             scrollbarColor:
               "#888 #f1f1f1" /* Color of the scrollbar thumb and track */,
-            borderRadius: "4px" /* Radius of the scrollbar thumb */,
+            borderRadius: "0px" /* Radius of the scrollbar thumb */,
           }}
         >
           <Outlet />

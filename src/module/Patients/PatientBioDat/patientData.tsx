@@ -59,6 +59,19 @@ export const tagToField = {
 };
  
 
+export const tagToField2 = {
+  vitals: [
+    "Body Temperature",
+    "Heart Rate(pulse)",
+    "Respiratory Rate",
+    "Blood Pressure",
+    "Oxygen Saturation (SpO2)",
+    "Pain Level",
+    "weight",
+    "height",
+    "Blood Glucose Level",
+  ],
+};
 
 
 
@@ -107,7 +120,7 @@ export const additionalTags = [
 
 export const patients = [
     {
-      "id": 1,
+      "id": "1",
       "patient": {
         "firstName": "John",
         "surname": "Doe",
@@ -118,7 +131,8 @@ export const patients = [
         "hmo": "HealthFirst",
         "occupation": "Engineer",
         "gender": "Male",
-        "image": nurseImage
+        "image": nurseImage,
+        "ward": "Ward 1a"
       },
       "contactInfo": {
         "homeAddress": "123 Main St, Apt 4B, Springfield, IL, 62704",
@@ -189,10 +203,96 @@ export const patients = [
           "role": "Consultant",
           "contact": "(123) 456-7890"
         }
-      ]
+      ],
+      "bloodPressureData": [
+        { day: "Monday", systolic: 120, diastolic: 80 },
+        { day: "Tuesday", systolic: 125, diastolic: 82 },
+        { day: "Wednesday", systolic: 130, diastolic: 85 },
+        { day: "Thursday", systolic: 135, diastolic: 88 },
+        { day: "Friday", systolic: 140, diastolic: 90 },
+        { day: "Saturday", systolic: 138, diastolic: 89 },
+      ],
+      "billing":[
+        {
+            subject: "Consultation Fee",
+            date: "2024-09-20",
+            cost: 150.00,
+        },
+        {
+            subject: "Blood Test",
+            date: "2024-09-18",
+            cost: 50.00,
+        },
+        {
+            subject: "X-Ray",
+            date: "2024-09-19",
+            cost: 100.00,
+        },
+        {
+            subject: "Medication",
+            date: "2024-09-21",
+            cost: 75.00,
+        },
+      ],
+      "medications":[
+        {
+          date: "2024-09-20",
+          medication: "Ibuprofen",
+          dosage: 200,
+          frequency: "Twice a day",
+          condition: "Headache",
+          administeredBy: "Dr. Sarah Lee",
+        },
+        {
+          date: "2024-09-20",
+          medication: "omeprazole",
+          dosage: 1000,
+          frequency: "Once a day",
+          condition: "Diabetes",
+          administeredBy: "Dr. Michael Smith",
+        },
+        {
+          date: "2024-09-18",
+          medication: "Amoxicillin",
+          dosage: 500, // in mg
+          frequency: "Three times a day",
+          condition: "Bacterial Infection",
+          administeredBy: "Nurse John Doe",
+        },
+        {
+          date: "2024-09-17",
+          medication: "Metformin",
+          dosage: 1000, // in mg
+          frequency: "Once a day",
+          condition: "Diabetes",
+          administeredBy: "Dr. Michael Smith",
+        },
+        {
+          date: "2024-09-16",
+          medication: "Paracetamol",
+          dosage: 650, // in mg
+          frequency: "Every 6 hours",
+          condition: "Fever",
+          administeredBy: "Nurse Mary Johnson",
+        },
+        {
+          date: "2024-09-15",
+          medication: "Aspirin",
+          dosage: 81,
+          frequency: "Once a day",
+          condition: "Blood Thinner",
+          administeredBy: "Dr. David White",
+        }
+      ],
+      "NursesNote":  {
+        note: "John Doe has severe anaphylactic reactions to Penicillin; all records and alert tags must be updated. Avoid beta-lactam antibiotics; consider desensitization if necessary. For the peanut allergy, strict avoidance and carrying an epinephrine auto-injector are essential. Referred to a dietitian for label reading and cross-contamination avoidance. Latex allergy is mild; use non-latex alternatives. Regular follow-ups are crucial; next review in six months.",
+        updatedOn: "12/06/24",
+        updatedBy: "Nr. Alabi",
+        doctor: "Dr. Jane Smith", 
+      }
     },
     {
-      "id": 2,
+      "id": "2",
       "patient": {
         "firstName": "Jane",
         "surname": "Smith",
@@ -203,7 +303,8 @@ export const patients = [
         "hmo": "Medicare",
         "occupation": "Doctor",
         "gender": "Female",
-        "image": nurseImage
+        "image": nurseImage,
+         "ward": "Ward 1b"
       },
       "contactInfo": {
         "homeAddress": "456 Elm St, Apt 2A, Springfield, IL, 62705",
@@ -251,8 +352,93 @@ export const patients = [
           "role": "Surgeon",
           "contact": "(567) 890-1234"
         }
-      ]
-    }
+      ],
+      "bloodPressureData": [
+        { day: "Monday", systolic: 120, diastolic: 80 },
+        { day: "Tuesday", systolic: 125, diastolic: 82 },
+        { day: "Wednesday", systolic: 130, diastolic: 85 },
+        { day: "Thursday", systolic: 135, diastolic: 88 },
+        { day: "Friday", systolic: 140, diastolic: 90 },
+        { day: "Saturday", systolic: 138, diastolic: 89 },
+      ],
+      "billing":[
+        {
+            subject: "Consultation Fee",
+            date: "2024-09-20",
+            cost: 150.00,
+        },
+        {
+            subject: "Blood Test",
+            date: "2024-09-18",
+            cost: 50.00,
+        },
+        {
+            subject: "X-Ray",
+            date: "2024-09-19",
+            cost: 100.00,
+        },
+        {
+            subject: "Medication",
+            date: "2024-09-21",
+            cost: 75.00,
+        },
+    ],
+    "medications": [ {
+        date: "2024-09-20",
+        medication: "Ibuprofen",
+        dosage: 200, 
+        frequency: "Twice a day",
+        condition: "Headache",
+        administeredBy: "Dr. Sarah Lee",
+      },
+      {
+        date: "2024-09-18",
+        medication: "Amoxicillin",
+        dosage: 500,
+        frequency: "Three times a day",
+        condition: "Bacterial Infection",
+        administeredBy: "Nurse John Doe",
+      },
+      {
+        date: "2024-09-20",
+        medication: "omeprazole",
+        dosage: 1000,
+        frequency: "Once a day",
+        condition: "Diabetes",
+        administeredBy: "Dr. Michael Smith",
+      },
+      {
+        date: "2024-09-17",
+        medication: "Metformin",
+        dosage: 1000,
+        frequency: "Once a day",
+        condition: "Diabetes",
+        administeredBy: "Dr. Michael Smith",
+      },
+      {
+        date: "2024-09-16",
+        medication: "Paracetamol",
+        dosage: 650, 
+        frequency: "Every 6 hours",
+        condition: "Fever",
+        administeredBy: "Nurse Mary Johnson",
+      },
+      {
+        date: "2024-09-15",
+        medication: "Aspirin",
+        dosage: 81, 
+        frequency: "Once a day",
+        condition: "Blood Thinner",
+        administeredBy: "Dr. David White",
+      }
+    ],
+    "NursesNote":  {
+        note: "John Doe has severe anaphylactic reactions to Penicillin; all records and alert tags must be updated. Avoid beta-lactam antibiotics; consider desensitization if necessary. For the peanut allergy, strict avoidance and carrying an epinephrine auto-injector are essential. Referred to a dietitian for label reading and cross-contamination avoidance. Latex allergy is mild; use non-latex alternatives. Regular follow-ups are crucial; next review in six months.",
+        updatedOn: "12/06/24",
+        updatedBy: "Nr. Alabi",
+        doctor: "Dr. Jane Smith", 
+    },  
+  }
   ]
 
 

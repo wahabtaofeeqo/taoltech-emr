@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import 'boxicons/css/boxicons.min.css';
 import './navBar.css'
 
@@ -12,6 +12,10 @@ const NavBar = () => {
       setShowMenu(prevState => !prevState)
   }
 
+  useEffect(() => {
+    setShowMenu(true);
+  }, [location.pathname]);
+
   return (
     <header className="w-screen px-4 py-3 flex justify-between items-center bg-white fixed top-0 z-10 mdd:px-6 lgg:px-6 xll:px-16">
       <h3 className="">Logo</h3>
@@ -20,7 +24,7 @@ const NavBar = () => {
 
         <ul className={`flex  ${showMenu ? 'active' : ''}`}>
           <li className="cancel xll:hidden" onClick={handleToggle} ><i className='bx bx-x'></i></li>
-          <li className="px-3 top"><Link  className={`text-sm xll:text-sm font-medium ${location.pathname === '/landing' ? 'text-[#175CD3]' : 'text-[#8F8F8F]'}`} to="/">Home</Link></li>
+          <li className="px-3 top"><Link  className={`text-sm xll:text-sm font-medium ${location.pathname === '/landing' ? 'text-[#175CD3]' : 'text-[#8F8F8F]'}`} to="/" >Home</Link></li>
           <li className="px-3"><Link className={`text-sm xll:text-sm font-medium ${location.pathname === '/about' ? 'text-[#175CD3]' : 'text-[#8F8F8F]'}`} to="/about">About</Link></li>
           <li className="px-3"><Link className={`text-sm xll:text-sm font-medium ${location.pathname === '/support' ? 'text-[#175CD3]' : 'text-[#8F8F8F]'}`} to="/support">Support</Link></li>
           <li className="px-3"><Link className={`text-sm xll:text-sm font-medium ${location.pathname === '/pricing' ? 'text-[#175CD3]' : 'text-[#8F8F8F]'}`} to="/pricing">Pricing</Link></li>

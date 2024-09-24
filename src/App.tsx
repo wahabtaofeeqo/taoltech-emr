@@ -13,6 +13,7 @@ import Settings from "./module/Settings/Settings";
 import LayoutLanding from './LandingPage/Layout';
 import LandingHome from './LandingPage/component/Home';
 import About from './LandingPage/component/about';
+import PatientsEntry from "./module/Patients/PatientsEntry";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <Route path="messages" element={<Messages />} />
               <Route path="support" element={<Support />} />
               <Route path="settings" element={<Settings />} />
+              <Route path="patients/:id" element={<PatientsEntry />} />
             </Route>
             <Route path="/" element={<LayoutLanding />}>
               <Route index element={<LandingHome />} />

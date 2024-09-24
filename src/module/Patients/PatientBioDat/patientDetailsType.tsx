@@ -1,5 +1,5 @@
 export type PatientDetails = {
-    id: number;
+    id: string;
     patient: {
       firstName: string;
       surname: string;
@@ -11,6 +11,7 @@ export type PatientDetails = {
       occupation: string;
       gender: string;
       image: string;
+      ward:  string;
     };
     contactInfo: {
       homeAddress: string;
@@ -54,8 +55,39 @@ export type PatientDetails = {
       role: string;
       contact: string;
     }[];
+    bloodPressureData: {
+      day: string; 
+      systolic: number;
+      diastolic: number 
+    }[],
+    billing: {
+      subject: string;
+      date: string;
+      cost: number
+    }[],
+    medications: {
+      date: string;
+      medication: string;
+      dosage: number;
+      frequency: string;
+      condition: string;
+      administeredBy: string;
+    }[],
+    NursesNote: {
+      note: string;
+      doctor: string;
+      updatedOn: string;
+      updatedBy: string;
+    };
   };
 
+  type NursesNote = {
+    note: string;
+    doctor: string;
+    updatedOn: string;
+    updatedBy: string;
+  };
+  
   type Patient = {
     firstName: string;
     surname: string;
@@ -67,6 +99,7 @@ export type PatientDetails = {
     occupation: string;
     gender: string;
     image: string;
+    ward: string;
   };
   
   type ContactInfo = {
@@ -115,9 +148,19 @@ export type PatientDetails = {
     role: string;
     contact: string;
   }[];
-  
+
+  type BloodPressureData = {
+    day: string; 
+    systolic: number;
+    diastolic: number 
+  }[]
+  type Billing = {
+    subject: string;
+    date: string;
+    cost: number
+  }  
  export  type PatientData = {
-    id: number; 
+    id: string; 
     patient: Patient;
     contactInfo: ContactInfo;
     emergencyContact: EmergencyContact;
@@ -126,4 +169,7 @@ export type PatientDetails = {
     additionalInfo: AdditionalInfo;
     tableData: TableData;
     allergens: string[];
+    bloodPressureData: BloodPressureData;
+    billing: Billing[];
+    nursesNote: NursesNote;
   };

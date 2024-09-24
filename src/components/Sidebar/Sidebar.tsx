@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { PiChatsTeardrop } from "react-icons/pi";
 import { RiHome5Line } from "react-icons/ri";
 import { RxFilePlus } from "react-icons/rx";
@@ -18,9 +18,9 @@ interface LinkItem {
 }
 
 const Sidebar: React.FC = () => {
-  const location = useLocation<{
-    pathname: string;
-  }>(); // Typing the location object
+  // const location = useLocation<{
+  //   pathname: string;
+  // }>(); // Typing the location object
 
   const links: LinkItem[] = [
     {

@@ -2,25 +2,23 @@ import React from 'react';
 import 'boxicons/css/boxicons.min.css';
 
 type activeInfo = {
-  viewInfo: boolean;
-  setViewInfo: React.Dispatch<React.SetStateAction<boolean>>;
-  viewCare: boolean;
-  setViewCare: React.Dispatch<React.SetStateAction<boolean>>;
+  viewCare: number;
+  setViewCare: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const FixedBar: React.FC<activeInfo> = ({ viewInfo, setViewInfo, viewCare, setViewCare }) => {
+const FixedBar: React.FC<activeInfo> = ({ viewCare, setViewCare }) => {
 
-  const handleToggle = () => {
-    setViewInfo(false); 
-    setViewCare(false);
-    console.log("am here")
+  const handleToggle = (num: number) => {
+    setViewCare(num);
   }
 
-  const viewCarePlan = () => {
-        if(viewInfo) {
-          setViewCare(true)
-        }
+  const viewCarePlan = (num: number) => {
+      setViewCare(num)
   }
+  const viewCarePlan2 = (num: number) => {
+    setViewCare(num)
+}
+
 
 
   return (
@@ -28,9 +26,9 @@ const FixedBar: React.FC<activeInfo> = ({ viewInfo, setViewInfo, viewCare, setVi
         <div className="text-white text-3xl bg-[#175CD3] pl-4 pt-4 pb-4 font-semibold">Patients</div>
         <div className="flex justify-between pl-4 pt-4 pb-4 pr-2 ">
                 <div className="flex gap-2">
-                    <span onClick={handleToggle}  className={`active pt-2 pb-2 pl-4 pr-4 bg-[#175CD3] ${!viewInfo ? 'text-white' : 'text-[#175CD3]' } text-sm rounded-md font-semibold ${!viewInfo ? 'bg-[#175CD3]' : 'bg-[#F9FAFB]' }`}>All</span>
-                    <span className={`pt-2 pb-2  pl-4 pr-4 text-sm rounded-md font-semibold ${viewInfo && !viewCare ? 'text-white' : 'text-[#175CD3]' }  ${viewInfo && !viewCare? 'bg-[#175CD3]' : 'bg-[#F9FAFB]' }`}>Patients Bio-data</span>
-                    <button onClick={() => viewCarePlan()} disabled={!viewInfo} className={`pt-2 pb-2  pl-4 pr-4  outline-none ${viewInfo && viewCare ? 'text-white' : 'text-[#175CD3]' }  ${viewInfo && viewCare? 'bg-[#175CD3]' : 'bg-[#F9FAFB]' } text-sm rounded-md font-semibold`}>Care Plan</button>
+                    <span  onClick={() => handleToggle(1)} className={`pt-2 pb-2 cursor-pointer pl-4 pr-4 text-sm rounded-md font-semibold ${viewCare === 1 ? 'text-white' : 'text-[#175CD3]' }  ${viewCare === 1 ? 'bg-[#175CD3]' : 'bg-[#F9FAFB]' }`}>Patients Bio-data</span>
+                    <button onClick={() => viewCarePlan(2)} className={`pt-2 pb-2 cursor-pointer pl-4 pr-4  outline-none ${viewCare === 2 ? 'text-white' : 'text-[#175CD3]' }  ${viewCare === 2? 'bg-[#175CD3]' : 'bg-[#F9FAFB]' } text-sm rounded-md font-semibold`}>Care Plan</button>
+                    <button onClick={() => viewCarePlan2(3)} className={`pt-2 pb-2 cursor-pointer pl-4 pr-4  outline-none ${viewCare === 3 ? 'text-white' : 'text-[#175CD3]' }  ${viewCare === 3? 'bg-[#175CD3]' : 'bg-[#F9FAFB]' } text-sm rounded-md font-semibold`}>Nurses plan</button>
                 </div>
                 <span className="text-2xl"><i className='bx bx-bell'></i></span>
         </div>

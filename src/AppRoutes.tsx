@@ -35,6 +35,7 @@ const AppRoutes: React.FC = () => {
         <Route index path="/verify-code" element={<VerifyCode />} />
         <Route index path="/reset-password" element={<ResetPassword />} />
         <Route path="/signup" element={<SignUp />} />
+
         <Route path="/" element={<Layout />}>
           {/* Super Admin Routes */}
           <Route path="super-admin" element={<SuperAdminHome />} />

@@ -230,6 +230,8 @@ const Registration: React.FC = () => {
 
   // Handle input changes
   const handleInputChange = (field: string, value: string) => {
+    console.log(field, value);
+    
     setForm((prev) => {
       const fields = field.split(".");
       if (fields.length === 1) {
@@ -238,7 +240,7 @@ const Registration: React.FC = () => {
         return {
           ...prev,
           [fields[0]]: {
-            ...prev[fields[0] as keyof FormData],
+            ...prev[fields[0]],
             [fields[1]]: value,
           },
         };
@@ -246,10 +248,10 @@ const Registration: React.FC = () => {
         return {
           ...prev,
           [fields[0]]: {
-            ...prev[fields[0] as keyof FormData],
+            ...prev[fields[0]],
             [fields[1]]: {
-              ...prev[fields[0] as keyof FormData][
-                fields[1] as keyof FormData[keyof FormData]
+              ...prev[fields[0]][
+                fields[1]
               ],
               [fields[2]]: value,
             },
@@ -279,7 +281,7 @@ const Registration: React.FC = () => {
         return {
           ...prev,
           [fields[0]]: {
-            ...prev[fields[0] as keyof FormData],
+            ...prev[fields[0]],
             [fields[1]]: checked,
           },
         };

@@ -18,6 +18,7 @@ interface CustomDropdownProps {
   disabled?: boolean;
   defaultOption?: string;
   className?: string;
+  [key: string]: any
 }
 
 const CustomDropdown: React.FC<CustomDropdownProps> = ({

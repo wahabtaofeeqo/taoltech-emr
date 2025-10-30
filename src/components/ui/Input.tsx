@@ -19,6 +19,7 @@ interface CustomInputProps {
   onIconClick?: () => void;
   error?: string;
   required?: boolean;
+  [key: string]: any
 }
 
 const CustomInput: React.FC<CustomInputProps> = ({

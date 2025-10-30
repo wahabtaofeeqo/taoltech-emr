@@ -17,6 +17,7 @@ interface CustomRadioProps {
   className?: string;
   orientation?: "horizontal" | "vertical";
   required?: boolean;
+  [key: string]: any
 }
 
 const CustomRadio: React.FC<CustomRadioProps> = ({

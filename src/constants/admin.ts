@@ -494,7 +494,7 @@ export const ReportData = [
 ];
 
 // Mock data - replace with your actual data source
-export const notificationsData = [
+export const notificationsData: any[] = [
   {
     id: 1,
     patientName: "Mr John Doe",

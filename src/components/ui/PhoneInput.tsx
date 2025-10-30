@@ -256,16 +256,7 @@ const CustomPhoneInput: React.FC<PhoneInputProps> = ({
             onSelect={handleCountrySelect}
             name="countryCode"
             placeholder={
-              showFlags && currentCountry ? (
-                <div className="flex items-center gap-2">
-                  {currentCountry.icon}
-                  <span className="text-sm font-medium">
-                    {currentCountry.value}
-                  </span>
-                </div>
-              ) : (
-                countryCode || "+234"
-              )
+              countryCode || "+234"
             }
             value={countryCode}
             disabled={disabled}

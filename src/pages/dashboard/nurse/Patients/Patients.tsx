@@ -17,8 +17,7 @@ const Patients = () => {
     "MRN",
     "Gender",
     "Age",
-    "Ward/Room/Bed No",
-    "Admission Date",
+    "Insurance",
     "Status",
   ];
 
@@ -27,11 +26,38 @@ const Patients = () => {
       <div className="py-3 px-6 bg-light-blue text-black mb-4">
         <h1 className="font-lora text-2xl font-bold">Patients</h1>
       </div>
-
+      <div className="flex items-center gap-2 px-4">
+        <button className="text-black bg-gray-1 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-50 text-sm hover:bg-primary-blue hover:text-white transition">
+          Today
+        </button>
+        <button className="text-black bg-gray-1 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-50 text-sm hover:bg-primary-blue hover:text-white transition">
+          Week
+        </button>
+        <button className="text-black bg-gray-1 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-50 text-sm hover:bg-primary-blue hover:text-white transition">
+          Month
+        </button>
+        <button className="text-black bg-gray-1 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-50 text-sm hover:bg-primary-blue hover:text-white transition">
+          Year
+        </button>
+        <button className="text-black bg-gray-1 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-50 text-sm hover:bg-primary-blue hover:text-white transition">
+          <input type="date" placeholder="Filter By Date" />
+        </button>
+      </div>
       <div className="p-4">
         <div className="space-y-4  p-4 bg-off-white rounded-2xl max-h-[70vh] overflow-y-auto scrollbar-hide">
           {/* table */}
           <div className="bg-[#F0FAFF] p-4 rounded-xl shadow">
+            <div className="flex justify-between items-center mb-2">
+              <h4 className=" text-[#020714] text-2xl font-semibold">
+                All Patients
+              </h4>
+              <Link
+                to={"/admin/patients/new"}
+                className="text-primary-blue cursor-pointer"
+              >
+                Add New Patient for Appointment
+              </Link>
+            </div>
             <div className="mb-6 w-1/2">
               <input
                 type="text"
@@ -52,6 +78,10 @@ const Patients = () => {
                         {header}
                       </th>
                     ))}
+
+                    <th className="px-2 py-4 text-center border-b border-gray-3 font-medium">
+                      Action
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -60,9 +90,6 @@ const Patients = () => {
                       key={item.MRN}
                       className="text-xs font-bold hover:bg-gray-100"
                     >
-                      <td className="px-2 py-2 text-left  border-b border-gray-3">
-                        {item.MRN}
-                      </td>
                       <td className="px-2 py-2 text-left border-b border-gray-3">
                         <div className="flex items-center gap-2">
                           <img
@@ -80,7 +107,9 @@ const Patients = () => {
                           </Link>
                         </div>
                       </td>
-
+                      <td className="px-2 py-2 text-left  border-b border-gray-3">
+                        {item.MRN}
+                      </td>
                       <td className="px-2 py-2 text-left  border-b border-gray-3">
                         {item.Gender}
                       </td>
@@ -88,23 +117,30 @@ const Patients = () => {
                         {item.Age}
                       </td>
                       <td className="px-2 py-2 text-left  border-b border-gray-3">
-                        {item.RoomAndBed}
-                      </td>
-                      <td className="px-2 py-2 text-left  border-b border-gray-3">
-                        {item.admissionDate}
+                        {item.Insurance}
                       </td>
                       <td className="px-2 py-2 text-left  border-b border-gray-3">
                         <StatusPill
-                          label={item.CheckInStatus}
+                          label={item.Status}
                           variant={
-                            item.CheckInStatus == "In Patients"
+                            item.Status == "Active"
                               ? "success"
-                              : item.CheckInStatus == "Discharged"
-                              ? ("warning" as StatusVariant)
                               : ("error" as StatusVariant)
                           }
                           size="sm"
                         />
+                      </td>
+                      <td className="px-2 py-2 text-center  border-b border-gray-3">
+                        <button
+                          className="bg-primary-blue text-white px-4 py-2 rounded-lg cursor-pointer disabled:opacity-50 hover:bg-blue-700 transition"
+                          disabled={item.Status !== "Active"}
+                          onClick={() => {
+                            // Handle reschedule action
+                            alert("Reschedule clicked for " + item.Name);
+                          }}
+                        >
+                          {item.Status === "Active" ? "Reschedule" : "Assigned"}
+                        </button>
                       </td>
                     </tr>
                   ))}

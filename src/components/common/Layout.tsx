@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar/index.tsx";
 
 const Layout: React.FC = () => {
   // For now, we'll hardcode a role for UI development
-  const userRole = "admin"; // Change this to test different sidebars: 'super-admin', 'admin', 'doctor', 'nurse', 'patient'
+  const userRole = "nurse"; // Change this to test different sidebars: 'super-admin', 'admin', 'doctor', 'nurse', 'patient'
 
   return (
     <div className="flex h-screen bg-gray-100">

@@ -6,6 +6,7 @@ import { HiEye, HiEyeOff } from "react-icons/hi";
 import facebook from "@/assets/facebook.svg";
 import google from "@/assets/google.svg";
 import apple from "@/assets/apple.svg";
+import { useNavigate } from "react-router-dom";
 
 const Login: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -13,10 +14,21 @@ const Login: React.FC = () => {
     password: "",
   });
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement> | any) => {
+  const handleInputChange = (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    localStorage.setItem("authToken", "your-auth-token");
+    navigate("/admin");
   };
 
   return (
@@ -94,11 +106,9 @@ const Login: React.FC = () => {
             required
           />
 
-          <div>
-            <CustomButton type="submit" fullWidth size="lg">
-              Sign in
-            </CustomButton>
-          </div>
+          <CustomButton type="submit" fullWidth size="lg" onClick={handleLogin}>
+            Log In
+          </CustomButton>
         </form>
       </div>
     </div>

@@ -119,6 +119,9 @@ export const PatientsData = [
     Age: 45,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/002",
@@ -128,6 +131,9 @@ export const PatientsData = [
     Age: 38,
     Insurance: "NHIS",
     Status: "Inactive",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "Discharged",
   },
   {
     MRN: "MD/2025/003",
@@ -137,6 +143,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "Out",
   },
   {
     MRN: "MD/2025/003",
@@ -146,6 +155,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -155,6 +167,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -164,6 +179,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -173,6 +191,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -182,6 +203,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -191,6 +215,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -200,6 +227,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -209,6 +239,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -218,6 +251,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -227,6 +263,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -236,6 +275,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
   {
     MRN: "MD/2025/003",
@@ -245,6 +287,9 @@ export const PatientsData = [
     Age: 50,
     Insurance: "Private",
     Status: "Active",
+    RoomAndBed: "Room 2/bed01",
+    admissionDate: "12-01-2025",
+    CheckInStatus: "In Patients",
   },
 ];
 
@@ -494,7 +539,7 @@ export const ReportData = [
 ];
 
 // Mock data - replace with your actual data source
-export const notificationsData: any[] = [
+export const notificationsData = [
   {
     id: 1,
     patientName: "Mr John Doe",
